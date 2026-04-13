@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólió</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    font-family:'Inter',sans-serif;
+    background: radial-gradient(circle at top, #2a2421, #1b1715 60%);
+    color:#f5eee9;
+    line-height:1.6;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    backdrop-filter: blur(10px);
+    background: rgba(30,26,24,0.7);
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #3a312d;
+}
+
+nav a{
+    color:#e8d5c4;
+    margin-left:15px;
+    text-decoration:none;
+    font-size:0.9rem;
+}
+
+nav a:hover{color:#f2b38f}
+
+header{
+    text-align:center;
+    padding:100px 20px 60px;
+}
+
+header h1{
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+header p{
+    margin-top:15px;
+    color:#cbb8a6;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+section{margin-bottom:80px}
+
+h2{
+    font-size:1.6rem;
+    margin-bottom:25px;
+    position:relative;
+}
+
+h2::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:40px;
+    height:3px;
+    background:#d4a373;
+}
+
+.card{
+    background: linear-gradient(145deg,#2c2522,#221c19);
+    padding:20px;
+    border-radius:16px;
+    margin-bottom:15px;
+    border:1px solid #3a312d;
+    transition:all .25s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    border-color:#d4a373;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.skills span{
+    display:inline-block;
+    background:#3a312d;
+    padding:8px 12px;
+    margin:5px;
+    border-radius:999px;
+    font-size:0.85rem;
+}
+
+.timeline{
+    border-left:2px solid #3a312d;
+    padding-left:20px;
+}
+
+.timeline div{
+    margin-bottom:20px;
+}
+
+.timeline div::before{
+    content:"";
+    width:10px;
+    height:10px;
+    background:#d4a373;
+    border-radius:50%;
+    position:absolute;
+    margin-left:-26px;
+    margin-top:6px;
+}
+
+.links a{
+    display:block;
+    margin-bottom:10px;
+    color:#e6b8a2;
+    text-decoration:none;
+}
+
+.links a:hover{text-decoration:underline}
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #3a312d;
+    color:#a08c7d;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div><b>Portfólió</b></div>
+    <div>
+        <a href="#about">Rólam</a>
+        <a href="#projects">Projektek</a>
+        <a href="#skills">Skillek</a>
+        <a href="#contact">Kapcsolat</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Neved</h1>
+    <p>Programozó | Kreatív fejlesztő</p>
+</header>
+
+<div class="container">
+
+<section id="about">
+<h2>Bemutatkozás</h2>
+<p>
+Egy 17 éves fejlesztő vagyok, aki szereti a letisztult rendszereket és az egyedi megoldásokat.
+Főbb területeim: C#, Python és projektalapú fejlesztés.
+</p>
+</section>
+
+<section id="projects">
+<h2>Projektek</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Puzzle játék</h3>
+<p>2 játékos együttműködésre épülő logikai játék.</p>
+<a href="#">GitHub →</a>
+</div>
+
+<div class="card">
+<h3>Energia kalkulátor</h3>
+<p>Befektetési és megtérülési számítások.</p>
+<a href="#">GitHub →</a>
+</div>
+
+</div>
+</section>
+
+<section id="skills">
+<h2>Skillek</h2>
+<div class="skills">
+<span>C#</span>
+<span>Python</span>
+<span>HTML/CSS</span>
+<span>GitHub</span>
+<span>Problem Solving</span>
+</div>
+</section>
+
+<section>
+<h2>Tapasztalat</h2>
+<div class="timeline">
+<div>
+<strong>2025</strong><br>
+Verseny projekt fejlesztése
+</div>
+<div>
+<strong>2024</strong><br>
+Első komplex programok
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Kapcsolat</h2>
+<div class="links">
+<a href="mailto:email@email.com">email@email.com</a>
+<a href="#">LinkedIn</a>
+<a href="#">GitHub</a>
+<a href="#">CV Magyar</a>
+<a href="#">CV English</a>
+</div>
+</section>
+
+</div>
+
+<footer>
+© 2026 Neved
+</footer>
+
+</body>
+</html>
